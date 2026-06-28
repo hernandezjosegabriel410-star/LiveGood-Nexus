@@ -3,40 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema Nexus | Libertad con LiveGood</title>
+    <title>Libertad Nexus | El Camino al Éxito</title>
     <style>
-        body { background-color: #0b0d17; color: #ffffff; font-family: sans-serif; text-align: center; margin: 0; }
-        .page { display: none; padding: 30px 15px; min-height: 100vh; }
-        .active { display: block; }
-        h1 { color: #f1c40f; font-size: 1.8em; margin-bottom: 10px; }
-        p { color: #bdc3c7; font-size: 1em; line-height: 1.4; }
-        .video-container { position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border: 2px solid #34495e; border-radius: 10px; overflow: hidden; }
-        .video-container iframe { position: absolute; top:0; left:0; width:100%; height:100%; }
-        .btn { display: inline-block; padding: 15px; background: #f1c40f; color: #000; text-decoration: none; border-radius: 30px; font-weight: bold; width: 90%; margin-top: 20px; border: none; cursor: pointer; }
-        .btn-green { background: #27ae60; color: #fff; }
-        input { padding: 12px; width: 85%; margin-top: 10px; border-radius: 8px; border: 1px solid #34495e; background: #1a1e2e; color: #fff; }
+        body { background-color: #0b0d17; color: #ffffff; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; text-align: center; margin: 0; padding: 0; }
+        .page { display: none; padding: 30px 15px; min-height: 100vh; box-sizing: border-box; }
+        .active { display: block !important; }
+        
+        h1 { color: #f1c40f; font-size: 2em; margin: 10px 0; text-transform: uppercase; text-shadow: 2px 2px 4px #000; }
+        h2 { color: #f39c12; font-size: 1.4em; margin-bottom: 20px; }
+        .hook-text { color: #bdc3c7; font-size: 1.1em; line-height: 1.5; font-style: italic; margin-bottom: 20px; }
+        .closing-text { color: #f1c40f; font-weight: bold; margin-top: 15px; font-size: 1.1em; }
+
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border: 3px solid #f1c40f; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        .video-container iframe { position: absolute; top:0; left:0; width:100%; height:100%; border: 0; }
+        
+        .btn { display: block; padding: 18px; background: linear-gradient(145deg, #f1c40f, #d4ac0d); color: #000; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.2em; width: 100%; max-width: 300px; margin: 30px auto 10px auto; border: none; cursor: pointer; text-transform: uppercase; box-shadow: 0 5px 15px rgba(241, 196, 15, 0.4); }
+        .btn-green { background: linear-gradient(145deg, #2ecc71, #27ae60); color: #fff; box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4); }
+        
+        input { padding: 15px; width: 90%; max-width: 300px; margin-top: 15px; border-radius: 10px; border: 1px solid #f1c40f; background: #1a1e2e; color: #fff; font-size: 1em; }
+        .footer-brand { font-size: 0.8em; color: #7f8c8d; margin-top: 40px; }
     </style>
 </head>
 <body>
+
+<!-- PÁGINA 1: EL DESPERTAR (ALEX DEY STYLE) -->
 <div id="page1" class="page active">
-    <h1>SISTEMA NEXUS</h1>
-    <div class="video-container"><iframe src="https://www.youtube.com/embed/PJE5Bixrzrc"></iframe></div>
-    <p>¿Buscas una oportunidad que cambie tu vida? Mira el video y da el primer paso.</p>
-    <button class="btn" onclick="document.getElementById(\"page1\").style.display=\"none\";document.getElementById(\"page2\").style.display=\"block\";window.scrollTo(0,0);">SIGUIENTE PASO ➡️</button>
+    <h1>¡EL CAMBIO COMIENZA AQUÍ!</h1>
+    <p class="hook-text">"No es el destino, es la decisión que tomas hoy la que diseña tu mañana."</p>
+    
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/PJE5Bixrzrc" allowfullscreen></iframe>
+    </div>
+    
+    <p class="closing-text">¿Estás listo para dejar de sobrevivir y empezar a vivir?</p>
+    <button class="btn" onclick="goToStep(2)">QUIERO SABER MÁS ➡️</button>
+    <p style="font-size: 0.9em; color: #7f8c8d;">Paso 1 de 3: El Descubrimiento</p>
 </div>
+
+<!-- PÁGINA 2: LA SOLUCIÓN Y EL FILTRO -->
 <div id="page2" class="page">
-    <h1>PASO #2: EL PRODUCTO</h1>
-    <div class="video-container"><iframe src="https://www.youtube.com/embed/M1lyQ3WHU-s"></iframe></div>
-    <p>Calidad premium a precio de fábrica. ¡Asegura tu acceso dejando tus datos!</p>
-    <input type="text" placeholder="Tu Nombre"><br>
-    <input type="email" placeholder="Tu Mejor Correo"><br>
-    <button class="btn btn-green" onclick="document.getElementById(\"page2\").style.display=\"none\";document.getElementById(\"page3\").style.display=\"block\";window.scrollTo(0,0);">VER PLAN DE GANANCIAS 🚀</button>
+    <h1>PASO #2: EL VEHÍCULO HACIA LA RIQUEZA</h1>
+    <h2>Calidad de Élite a Precio de Fábrica</h2>
+    
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/M1lyQ3WHU-s" allowfullscreen></iframe>
+    </div>
+    
+    <p class="hook-text">"El conocimiento es poder, pero solo si tienes el vehículo correcto para usarlo."</p>
+    
+    <p>Asegura tu invitación al círculo de ganadores:</p>
+    <input type="text" id="custName" placeholder="Tu Nombre Completo"><br>
+    <input type="email" id="custEmail" placeholder="Tu Mejor Correo Electrónico"><br>
+    
+    <button class="btn btn-green" onclick="goToStep(3)">VER MI PLAN DE PAGOS 🚀</button>
+    <p style="font-size: 0.9em; color: #7f8c8d;">Paso 2 de 3: La Herramienta</p>
 </div>
+
+<!-- PÁGINA 3: EL CIERRE MAESTRO -->
 <div id="page3" class="page">
-    <h1>PASO #3: GANA CON NOSOTROS</h1>
-    <div class="video-container"><iframe src="https://www.youtube.com/embed/yoFGfgPa0Xw"></iframe></div>
-    <p>¡No esperes más! Toma acción y asegura tu posición ahora mismo.</p>
-    <a href="https://www.DescubreLiveGood.com/JGHMatute" class="btn btn-green">¡REGÍSTRATE AQUÍ AHORA!</a>
+    <h1>PASO #3: ¡TU MOMENTO ES AHORA!</h1>
+    <p class="hook-text">"El 90% del éxito es simplemente estar allí. Asegura tu posición en la matriz mundial."</p>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/yoFGfgPa0Xw" allowfullscreen></iframe>
+    </div>
+    
+    <p class="closing-text">¿Vas a ser espectador o protagonista de tu propia riqueza?</p>
+    <a href="https://www.DescubreLiveGood.com/JGHMatute" class="btn btn-green">¡SÍ, ME REGISTRO AHORA!</a>
+    
+    <p style="margin-top: 20px; font-weight: bold; color: #e74c3c;">⚠️ ÚLTIMAS POSICIONES DISPONIBLES</p>
+    <div class="footer-brand">© 2026 CORPORACIÓN NEXUS | SISTEMA DE ALTO RENDIMIENTO</div>
 </div>
+
+<script>
+    function goToStep(step) {
+        // Ocultar todas las páginas
+        document.querySelectorAll(".page").forEach(p => {
+            p.style.display = "none";
+            p.classList.remove("active");
+        });
+        
+        // Mostrar la página destino
+        const target = document.getElementById("page" + step);
+        if (target) {
+            target.style.display = "block";
+            target.classList.add("active");
+            window.scrollTo(0, 0);
+        }
+    }
+</script>
+
 </body>
 </html>
