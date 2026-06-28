@@ -3,95 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libertad Nexus | El Camino al Éxito</title>
+    <title>Sistema Nexus Elite | LiveGood</title>
     <style>
-        body { background-color: #0b0d17; color: #ffffff; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; text-align: center; margin: 0; padding: 0; }
-        .page { display: none; padding: 30px 15px; min-height: 100vh; box-sizing: border-box; }
+        body { background-color: #0b0d17; color: #ffffff; font-family: "Segoe UI", sans-serif; text-align: center; margin: 0; padding: 0; }
+        .page { display: none; padding: 25px 15px; min-height: 100vh; box-sizing: border-box; }
         .active { display: block !important; }
         
-        h1 { color: #f1c40f; font-size: 2em; margin: 10px 0; text-transform: uppercase; text-shadow: 2px 2px 4px #000; }
-        h2 { color: #f39c12; font-size: 1.4em; margin-bottom: 20px; }
-        .hook-text { color: #bdc3c7; font-size: 1.1em; line-height: 1.5; font-style: italic; margin-bottom: 20px; }
-        .closing-text { color: #f1c40f; font-weight: bold; margin-top: 15px; font-size: 1.1em; }
-
-        .video-container { position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; border: 3px solid #f1c40f; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        h1 { color: #f1c40f; font-size: 1.8em; text-transform: uppercase; margin: 10px 0; }
+        .alert-box { background: rgba(241, 196, 15, 0.1); border-left: 4px solid #f1c40f; padding: 10px; margin: 15px 0; font-size: 0.9em; color: #f1c40f; font-weight: bold; }
+        .hook-text { color: #bdc3c7; font-size: 1em; line-height: 1.4; margin-bottom: 15px; }
+        
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; margin: 15px 0; border: 2px solid #f1c40f; border-radius: 10px; overflow: hidden; }
         .video-container iframe { position: absolute; top:0; left:0; width:100%; height:100%; border: 0; }
         
-        .btn { display: block; padding: 18px; background: linear-gradient(145deg, #f1c40f, #d4ac0d); color: #000; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.2em; width: 100%; max-width: 300px; margin: 30px auto 10px auto; border: none; cursor: pointer; text-transform: uppercase; box-shadow: 0 5px 15px rgba(241, 196, 15, 0.4); }
-        .btn-green { background: linear-gradient(145deg, #2ecc71, #27ae60); color: #fff; box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4); }
+        .btn { display: block; padding: 16px; background: linear-gradient(145deg, #f1c40f, #d4ac0d); color: #000; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.1em; width: 100%; max-width: 300px; margin: 20px auto 10px auto; border: none; cursor: pointer; text-transform: uppercase; }
+        .btn-green { background: linear-gradient(145deg, #2ecc71, #27ae60); color: #fff; }
+        .btn-wpp { background: #25d366; color: #fff; font-size: 0.9em; padding: 12px; margin-top: 10px; }
         
-        input { padding: 15px; width: 90%; max-width: 300px; margin-top: 15px; border-radius: 10px; border: 1px solid #f1c40f; background: #1a1e2e; color: #fff; font-size: 1em; }
-        .footer-brand { font-size: 0.8em; color: #7f8c8d; margin-top: 40px; }
+        input { padding: 12px; width: 90%; max-width: 300px; margin-top: 10px; border-radius: 8px; border: 1px solid #f1c40f; background: #1a1e2e; color: #fff; }
+        .guide-box { background: #1a1e2e; border: 1px dashed #f1c40f; padding: 15px; border-radius: 10px; text-align: left; font-size: 0.9em; margin-top: 15px; }
+        .guide-box ul { padding-left: 20px; color: #bdc3c7; }
     </style>
 </head>
 <body>
 
-<!-- PÁGINA 1: EL DESPERTAR (ALEX DEY STYLE) -->
+<!-- PASO 1 -->
 <div id="page1" class="page active">
     <h1>¡EL CAMBIO COMIENZA AQUÍ!</h1>
-    <p class="hook-text">"No es el destino, es la decisión que tomas hoy la que diseña tu mañana."</p>
-    
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/PJE5Bixrzrc" allowfullscreen></iframe>
-    </div>
-    
-    <p class="closing-text">¿Estás listo para dejar de sobrevivir y empezar a vivir?</p>
-    <button class="btn" onclick="goToStep(2)">QUIERO SABER MÁS ➡️</button>
-    <p style="font-size: 0.9em; color: #7f8c8d;">Paso 1 de 3: El Descubrimiento</p>
+    <div class="alert-box">⚠️ IMPORTANTE: Mira el video COMPLETO (5 min) para descubrir cómo el sistema Nexus trabaja por ti.</div>
+    <div class="video-container"><iframe src="https://www.youtube.com/embed/PJE5Bixrzrc"></iframe></div>
+    <p class="hook-text">"La información sin acción es solo ilusión. Mira el video y toma el control."</p>
+    <button class="btn" onclick="goToStep(2)">SIGUIENTE: LOS PRODUCTOS ➡️</button>
 </div>
 
-<!-- PÁGINA 2: LA SOLUCIÓN Y EL FILTRO -->
+<!-- PASO 2 -->
 <div id="page2" class="page">
-    <h1>PASO #2: EL VEHÍCULO HACIA LA RIQUEZA</h1>
-    <h2>Calidad de Élite a Precio de Fábrica</h2>
-    
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/M1lyQ3WHU-s" allowfullscreen></iframe>
-    </div>
-    
-    <p class="hook-text">"El conocimiento es poder, pero solo si tienes el vehículo correcto para usarlo."</p>
-    
-    <p>Asegura tu invitación al círculo de ganadores:</p>
-    <input type="text" id="custName" placeholder="Tu Nombre Completo"><br>
-    <input type="email" id="custEmail" placeholder="Tu Mejor Correo Electrónico"><br>
-    
-    <button class="btn btn-green" onclick="goToStep(3)">VER MI PLAN DE PAGOS 🚀</button>
-    <p style="font-size: 0.9em; color: #7f8c8d;">Paso 2 de 3: La Herramienta</p>
+    <h1>PASO #2: EL VEHÍCULO</h1>
+    <div class="alert-box">🔍 ATENCIÓN: No saltes este video. Aquí verás la calidad que respalda tu negocio.</div>
+    <div class="video-container"><iframe src="https://www.youtube.com/embed/M1lyQ3WHU-s"></iframe></div>
+    <p class="hook-text">"Calidad de Élite a precio de fábrica. ¡Este es el poder de la membresía!"</p>
+    <input type="text" placeholder="Tu Nombre Completo"><br>
+    <input type="email" placeholder="Tu Mejor Correo"><br>
+    <button class="btn btn-green" onclick="goToStep(3)">ÚLTIMO PASO: EL PLAN 🚀</button>
 </div>
 
-<!-- PÁGINA 3: EL CIERRE MAESTRO -->
+<!-- PASO 3 -->
 <div id="page3" class="page">
-    <h1>PASO #3: ¡TU MOMENTO ES AHORA!</h1>
-    <p class="hook-text">"El 90% del éxito es simplemente estar allí. Asegura tu posición en la matriz mundial."</p>
-
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/yoFGfgPa0Xw" allowfullscreen></iframe>
+    <h1>PASO #3: ASEGURA TU FUTURO</h1>
+    <div class="alert-box">💡 CONSEJO FINAL: Este video te muestra CÓMO ganar dinero mientras duermes.</div>
+    <div class="video-container"><iframe src="https://www.youtube.com/embed/yoFGfgPa0Xw"></iframe></div>
+    
+    <div class="guide-box">
+        <strong>📝 INSTRUCCIONES DE REGISTRO:</strong>
+        <ul>
+            <li>Al entrar, completa el formulario con tus datos reales.</li>
+            <li>Asegura tu posición haciendo el pago de tu membresía.</li>
+            <li>¡Bienvenido al equipo Nexus!</li>
+        </ul>
     </div>
     
-    <p class="closing-text">¿Vas a ser espectador o protagonista de tu propia riqueza?</p>
-    <a href="https://www.DescubreLiveGood.com/JGHMatute" class="btn btn-green">¡SÍ, ME REGISTRO AHORA!</a>
-    
-    <p style="margin-top: 20px; font-weight: bold; color: #e74c3c;">⚠️ ÚLTIMAS POSICIONES DISPONIBLES</p>
-    <div class="footer-brand">© 2026 CORPORACIÓN NEXUS | SISTEMA DE ALTO RENDIMIENTO</div>
+    <a href="https://www.DescubreLiveGood.com/JGHMatute" class="btn btn-green">¡SÍ, REGISTRARME AHORA!</a>
+    <a href="https://wa.me/573024529234?text=Hola%20Gabriel,%20tengo%20dudas%20con%20mi%20registro%20en%20LiveGood" class="btn btn-wpp">💬 SOPORTE IA WHATSAPP</a>
+    <p style="font-size: 0.8em; color: #7f8c8d; margin-top: 20px;">© 2026 CORPORACIÓN NEXUS</p>
 </div>
 
 <script>
     function goToStep(step) {
-        // Ocultar todas las páginas
-        document.querySelectorAll(".page").forEach(p => {
-            p.style.display = "none";
-            p.classList.remove("active");
-        });
-        
-        // Mostrar la página destino
-        const target = document.getElementById("page" + step);
-        if (target) {
-            target.style.display = "block";
-            target.classList.add("active");
-            window.scrollTo(0, 0);
-        }
+        document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
+        document.getElementById("page" + step).classList.add("active");
+        window.scrollTo(0, 0);
     }
 </script>
-
 </body>
 </html>
