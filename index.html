@@ -10,52 +10,69 @@
         .active { display: block !important; }
         
         h1 { color: #f1c40f; font-size: 1.8em; text-transform: uppercase; margin: 10px 0; }
-        .alert-box { background: rgba(241, 196, 15, 0.1); border-left: 4px solid #f1c40f; padding: 10px; margin: 15px 0; font-size: 0.9em; color: #f1c40f; font-weight: bold; }
-        .vol-warning { background: #e74c3c; color: #fff; padding: 5px; font-size: 0.8em; border-radius: 5px; margin-bottom: 10px; display: block; animation: pulse 2s infinite; }
+        h2 { color: #f39c12; font-size: 1.3em; margin: 10px 0; }
         
-        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
+        .alert-box { background: rgba(241, 196, 15, 0.1); border-left: 4px solid #f1c40f; padding: 10px; margin: 15px 0; font-size: 0.9em; color: #f1c40f; font-weight: bold; }
+        .vol-warning { background: #e74c3c; color: #fff; padding: 8px; font-size: 0.9em; border-radius: 5px; margin-bottom: 5px; font-weight: bold; display: block; animation: pulse 2s infinite; }
+        .play-instruction { color: #f1c40f; font-weight: bold; font-size: 1.1em; margin-bottom: 10px; }
+        
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.7; } 100% { opacity: 1; } }
 
-        .video-container { position: relative; padding-bottom: 56.25%; height: 0; margin: 15px 0; border: 2px solid #f1c40f; border-radius: 10px; overflow: hidden; }
+        .hook-text { color: #bdc3c7; font-size: 1.1em; line-height: 1.5; font-style: italic; margin: 15px 0; }
+        .closing-text { color: #f1c40f; font-weight: bold; margin-top: 15px; font-size: 1.1em; }
+
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; margin: 10px 0; border: 2px solid #f1c40f; border-radius: 10px; overflow: hidden; }
         .video-container iframe { position: absolute; top:0; left:0; width:100%; height:100%; border: 0; }
         
-        .btn { display: block; padding: 16px; background: linear-gradient(145deg, #f1c40f, #d4ac0d); color: #000; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.1em; width: 100%; max-width: 300px; margin: 20px auto 10px auto; border: none; cursor: pointer; text-transform: uppercase; }
+        .btn { display: block; padding: 16px; background: linear-gradient(145deg, #f1c40f, #d4ac0d); color: #000; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.1em; width: 100%; max-width: 300px; margin: 25px auto 10px auto; border: none; cursor: pointer; text-transform: uppercase; box-shadow: 0 5px 15px rgba(241, 196, 15, 0.3); }
         .btn-green { background: linear-gradient(145deg, #2ecc71, #27ae60); color: #fff; }
         .btn-wpp { background: #25d366; color: #fff; font-size: 0.9em; padding: 14px; margin-top: 15px; text-decoration: none; display: inline-block; border-radius: 50px; width: 90%; max-width: 300px; font-weight: bold; }
         
         .guide-box { background: #1a1e2e; border: 1px dashed #f1c40f; padding: 15px; border-radius: 10px; text-align: left; font-size: 0.9em; margin-top: 15px; }
+        .arrow { font-size: 1.5em; display: block; }
     </style>
 </head>
 <body>
 
 <!-- PASO 1 -->
 <div id="page1" class="page active">
-    <h1>¡TU OPORTUNIDAD!</h1>
-    <div class="vol-warning">🔊 ASEGÚRATE DE SUBIR EL VOLUMEN DE TU CELULAR</div>
+    <h1>¡EL CAMBIO COMIENZA AQUÍ!</h1>
+    <p class="hook-text">"No es el destino, es la decisión que tomas hoy la que diseña tu mañana."</p>
+    <div class="vol-warning">🔊 SUBE EL VOLUMEN DE TU CELULAR</div>
+    <div class="play-instruction">DALE PLAY PARA VER EL VIDEO COMPLETO <span class="arrow">👇</span></div>
     <div class="video-container"><iframe id="vid1" src="https://www.youtube.com/embed/PJE5Bixrzrc?autoplay=1&rel=0" allow="autoplay"></iframe></div>
-    <button class="btn" onclick="goToStep(2)">VER LOS PRODUCTOS ➡️</button>
+    <p class="closing-text">¿Estás listo para dejar de sobrevivir y empezar a vivir?</p>
+    <button class="btn" onclick="goToStep(2)">QUIERO SABER MÁS ➡️</button>
 </div>
 
 <!-- PASO 2 -->
 <div id="page2" class="page">
-    <h1>CALIDAD DE ÉLITE</h1>
+    <h1>PASO #2: EL VEHÍCULO</h1>
+    <h2>Calidad de Élite a Precio de Fábrica</h2>
     <div class="vol-warning">🔊 SUBE EL VOLUMEN PARA ESCUCHAR LOS BENEFICIOS</div>
+    <div class="play-instruction">DALE PLAY Y DESCUBRE NUESTROS PRODUCTOS <span class="arrow">👇</span></div>
     <div class="video-container"><iframe id="vid2" src=""></iframe></div>
-    <button class="btn" onclick="goToStep(3)">CÓMO GANAR DINERO 💰</button>
+    <p class="hook-text">"El conocimiento es poder, pero solo si tienes el vehículo correcto para usarlo."</p>
+    <button class="btn" onclick="goToStep(3)">VER CÓMO GANAR DINERO 💰</button>
 </div>
 
 <!-- PASO 3 -->
 <div id="page3" class="page">
-    <h1>TU PLAN DE RIQUEZA</h1>
+    <h1>PASO #3: PLAN DE RIQUEZA</h1>
     <div class="vol-warning">🔊 ESCUCHA CON ATENCIÓN TU PLAN DE PAGOS</div>
+    <div class="play-instruction">DALE PLAY PARA CONOCER TUS GANANCIAS <span class="arrow">👇</span></div>
     <div class="video-container"><iframe id="vid3" src=""></iframe></div>
+    <p class="closing-text">¿Vas a ser espectador o protagonista de tu propia riqueza?</p>
     <button class="btn btn-green" onclick="goToStep(4)">VER TUTORIAL DE REGISTRO 🎥</button>
 </div>
 
 <!-- PASO 4 -->
 <div id="page4" class="page">
     <h1>TUTORIAL DE REGISTRO</h1>
-    <div class="alert-box">📝 SIGUE LOS PASOS DEL VIDEO PARA TU ACTIVACIÓN.</div>
+    <div class="alert-box">📝 SIGUE LOS PASOS DEL VIDEO PARA TU ACTIVACIÓN EXITOSA.</div>
+    <div class="play-instruction">MIRA CÓMO REGISTRARTE PASO A PASO <span class="arrow">👇</span></div>
     <div class="video-container"><iframe id="vid4" src=""></iframe></div>
+    <p>¡Asegura tu posición en la matriz mundial hoy mismo!</p>
     <button class="btn btn-green" onclick="goToStep(5)">IR AL REGISTRO FINAL 🚀</button>
 </div>
 
@@ -63,18 +80,17 @@
 <div id="page5" class="page">
     <h1>ASEGURA TU POSICIÓN</h1>
     <div class="guide-box">
-        <strong>📝 RECORDATORIO FINAL:</strong>
+        <strong>📝 INSTRUCCIONES DE REGISTRO:</strong>
         <ul>
-            <li>Completa tus datos en la página oficial.</li>
-            <li>Activa tu membresía de inmediato.</li>
-            <li>¡Bienvenido a la Corporación Nexus!</li>
+            <li>Al entrar, completa el formulario con tus datos reales.</li>
+            <li>Asegura tu posición haciendo el pago de tu membresía.</li>
+            <li>¡Bienvenido al equipo de la Corporación Nexus!</li>
         </ul>
     </div>
     <a href="https://www.DescubreLiveGood.com/JGHMatute" class="btn btn-green">¡SÍ, REGISTRARME AHORA!</a>
-    
     <hr style="border: 0.5px solid #34495e; margin: 25px 0;">
-    <p style="font-size: 0.9em; color: #bdc3c7;">¿Tienes dudas con tu registro?</p>
-    <a href="https://wa.me/573024529234?text=%C2%A1Hola%21%20Vengo%20de%20la%20p%C3%A1gina%20Nexus.%20Necesito%20soporte%20t%C3%A9cnico%20para%20completar%20mi%20registro%20exitoso%20en%20LiveGood.%20%C2%BFMe%20ayudas%3F" class="btn btn-wpp">💬 CONTACTAR SOPORTE TÉCNICO</a>
+    <p style="font-size: 0.9em; color: #bdc3c7;">¿Necesitas ayuda con tu registro?</p>
+    <a href="https://wa.me/573024529234?text=%C2%A1Hola%21%20Vengo%20de%20la%20p%C3%A1gina%20Nexus.%20Necesito%20soporte%20t%C3%A9cnico%20para%20completar%20mi%20registro%20exitoso%20en%20LiveGood.%20%C2%BFMe%20ayudas%3F" class="btn btn-wpp">💬 SOPORTE TÉCNICO WHATSAPP</a>
 </div>
 
 <script>
@@ -88,7 +104,6 @@
     function goToStep(step) {
         document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
         document.getElementById("page" + step).classList.add("active");
-        
         const frame = document.getElementById("vid" + step);
         if (frame && videos[step]) {
             frame.src = videos[step];
